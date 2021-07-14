@@ -1100,6 +1100,12 @@ async def cb_max_buttons(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
+                    "60 Filters", callback_data=f"set(per_page|60|{chat_id}|{count})"
+                )
+        ],
+        [
+            InlineKeyboardButton
+                (
                     "🔙 Back 🔙", callback_data=f"config({chat_id})"
                 )
         ]
